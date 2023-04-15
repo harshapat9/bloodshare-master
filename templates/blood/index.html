@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+
+<head>
+    <style>
+        .xyz{
+          margin-bottom: 0px;
+          background-image: url('{% static "image/homepage.jpg" %}');
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+      </style>
+      
+</head>
+
+
+<body>
+  {% include "blood/navbar.html" %}
+<br>
+<section id="section-jumbotron" style="margin-bottom: 0px;" class="jumbotron jumbotron-fluid d-flex justify-content-center align-items-center xyz">
+    <div class="container text-center">
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+     
+      
+      <br><br><br><br>
+      
+    </div>  
+  </section>
+
+
+  <div class="jumbotron" style="margin-top: 0px;margin-bottom: 0px;">
+
+    <p class="lead text-center">ABOUT US
+    
+    <p class="text-center">There is the main importance of the diversity in the requirement to donation of blood. Maintaining diversity in the blood supply is essential.
+Some blood types are quite rare and are likeliest to be found among people with shared ancestral origins and mostly they may not be available near the local blood banks, which can cause a person to lose their valuable life.
+We have the vision of connecting the user directly to the donor, this will help us to make this blood available to the users as soon as possible.
+You may be most familiar with the typical whole blood donation drive seen at workplaces that requires high security and  cleanliness we have made sure that there is no compromise in these two aspects.
+Here are many reasons patients need blood. A common misunderstanding about blood usage is that accident victims are the patients who use the most blood. Actually, people needing the most blood include those:
+Being treated for cancer, &
+Undergoing orthopaedic surgeries.</p>
+    
+  </div>
+  {% include "blood/footer.html" %}
+
+
+</body>
+
+</html>
