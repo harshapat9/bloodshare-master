@@ -1,4 +1,4 @@
-@import = url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet")
+@import "https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i";
 
 #map {
   height: 100%;
@@ -8,8 +8,8 @@
 html,
 body {
   display: flex;
-  align_items: center;
-  justify-center: center;
+  align-items: center;
+  justify-content: center;
   height: 100%;
   margin: 0;
   padding: 0;

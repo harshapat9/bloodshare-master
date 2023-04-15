@@ -66,8 +66,8 @@ def make_request_view(request):
     if request.method=='POST':
         request_form=bforms.RequestForm(request.POST)
         if request_form.is_valid():
-            blood_request=request_form.save(commit=False)
-            blood_request.bloodgroup=request_form.cleaned_data['bloodgroup']
+            blood_request=request_form.save()
+            blood_request.bloodgroup = request_form.cleaned_data['bloodgroup']
             donor= models.Donor.objects.get(user_id=request.user.id)
             blood_request.request_by_donor=donor
             blood_request.save()
